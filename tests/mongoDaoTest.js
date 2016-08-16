@@ -2,9 +2,9 @@ var expect = require('chai').expect;
 var mockgoose = require('mockgoose');
 var mongoose = require('mongoose');
 
-var mongoDao = require('../js/dao/mongoDao')
-var mydoc = require('../js/dao/models').mydoc();
-var Mydoc = require('../js/dao/models').mydoc();
+var mongoDao = require('../src/nodejs/dao/mongoDao')
+var mydoc = require('../src/nodejs/dao/models').mydoc();
+var Mydoc = require('../src/nodejs/dao/models').mydoc();
 describe('mongoDao.testSave', function testSave() {
 	this.timeout(15000);
 	it('should save a Mongo Document', function(done) {

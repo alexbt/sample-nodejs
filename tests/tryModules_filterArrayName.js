@@ -1,6 +1,6 @@
 var chai = require('chai');
 var expect = chai.expect; // we are using the "expect" style of Chai
-var tryModules = require('../js/utils/tryModules');
+var tryModules = require('../src/nodejs/utils/tryModules');
 
 describe('tryModules.filterArrayName', function() {
   it('Test array filtering using underscore.filter', function() {

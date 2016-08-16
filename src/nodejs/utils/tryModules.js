@@ -11,10 +11,10 @@ exports.rearrangeArrayName = function(arr) {
 };
 
 
-exports.filterArrayName = function(arr, firstName) {
+exports.filterArrayName = function(arr, name) {
 	var modifiedArray = exports.rearrangeArrayName(arr);
 	modifiedArray = _.filter(modifiedArray, function(elem){
-		return s.contains(elem.firstName, firstName);
+		return s.contains(elem.firstName, name) || s.contains(elem.lastName, name);
 	});
 
 	return modifiedArray;

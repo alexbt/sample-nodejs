@@ -3,7 +3,7 @@ require('dotenv').config();
 //EXPRESS
 var express = require('express');
 var app = express();
-require('./js/routes/routes')(app);
+require('./src/nodejs/routes/routes')(app);
 app.listen(8082);
 console.log('Express listening on port 8080');
 
@@ -16,7 +16,7 @@ server.connection({
     port: 8083 
 });
 
-require('./js/routes/routes_hapi')(server);
+require('./src/nodejs/routes/routes_hapi')(server);
 
 server.start((err) => {
     if (err) {
